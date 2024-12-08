@@ -9,7 +9,7 @@ import { baseOpenGraph } from '@/app/shared-metadata'
 // import dynamic from 'next/dynamic'
 import Header from '@/components/header'
 // const Header = dynamic(() => import('@/components/header'), { ssr: false })
-const inter = Inter({ subsets: ['vietnamese'] })
+// const inter = Inter({ subsets: ['vietnamese'] })
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +27,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${inter.className}`}>
+      <body>
         <Toaster />
         <ThemeProvider
           attribute='class'

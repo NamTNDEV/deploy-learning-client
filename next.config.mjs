@@ -5,16 +5,20 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'localhost',
-        port: '4000'
+        port: '4000',
         // pathname: '/photos/**'
-      }
-    ]
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.namtndev.online',
+      },
+    ],
   },
   logging: {
     fetches: {
-      fullUrl: true
-    }
-  }
-}
+      fullUrl: true,
+    },
+  },
+};
 
-export default nextConfig
+export default nextConfig;
